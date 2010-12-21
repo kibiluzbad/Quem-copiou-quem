@@ -1,0 +1,107 @@
+html{
+    font-family: helvetica, arial, verdana;
+    font-size:12px;
+    color:#333;
+    margin:0px;
+    border:none;
+    padding:0px;
+}
+
+body{
+    background-image:url(../images/beta.jpg);
+    background-repeat:no-repeat;
+    margin:0px;
+    border:none;
+    padding:0px;
+}
+
+a{ 
+    color: #00f;
+    text-decoration:none;
+}
+
+a:hover{ 
+    color: #00f;
+    text-decoration:underline;
+}
+a:visited{ 
+   color: #00f;
+}
+
+#pergunta{
+    font-weight:bolder;
+    font-size:28px;
+    text-align:center;
+}
+
+#wrapper{
+    margin:0 auto;
+    width:948px;
+}
+
+#header{
+    height: 20px;
+    padding:5px;
+}
+
+#content{
+    padding:10px;
+}
+
+#a{
+    width:50%;
+    float:left;
+    text-align: center;
+}
+
+
+#b{
+    width:50%;
+    float:left;
+    text-align: center;
+}
+
+img{
+    width:180px;
+    cursor:pointer;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.clear{
+    clear:both;
+}
+
+#total_votos{
+    text-align:center;
+}
+
+#footer{
+    height: 30px;
+    background-color:#160991;
+    bottom:0px;
+    position: absolute;
+    width:100%;
+    color:#fff;
+    text-align:center;
+    line-height:30px;
+}
+
+#footer a{ 
+    color: #fff;
+}
+
+#footer a:hover{ 
+    color: #fff;
+}
+#footer a:visited{ 
+    color: #fff;
+}
+
+#dica{
+    margin:0 auto;
+    padding: 20px;
+    background-color:#eee;   
+}

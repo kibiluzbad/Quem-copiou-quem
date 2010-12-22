@@ -7,6 +7,31 @@
 <%= javascript_include_tag "jquery.blockUI" %>
 <%= javascript_include_tag "application" %>
 <%= csrf_meta_tag %>
+<script type="text/javascript">
+var uservoiceOptions = {
+  /* required */
+  key: 'quemcopiouquem',
+  host: 'quemcopiouquem.uservoice.com', 
+  forum: '92949',
+  showTab: true,  
+  /* optional */
+  alignment: 'left',
+  background_color:'#160991', 
+  text_color: 'white',
+  hover_color: '#160991',
+  lang: 'en',
+  alignment: "right"
+};
+
+function _loadUserVoice() {
+  var s = document.createElement('script');
+  s.setAttribute('type', 'text/javascript');
+  s.setAttribute('src', ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js");
+  document.getElementsByTagName('head')[0].appendChild(s);
+}
+_loadSuper = window.onload;
+window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice(); };
+</script>
 </head>
 <body>
   <div id="wrapper">

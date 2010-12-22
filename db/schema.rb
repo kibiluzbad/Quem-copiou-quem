@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(:version => 20101222214934) do
 
   create_table "comparacaos", :force => true do |t|
-    t.string   "pergunta"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "pergunta"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "objetos", :force => true do |t|

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101221154920) do
+ActiveRecord::Schema.define(:version => 20101222214934) do
 
   create_table "comparacaos", :force => true do |t|
     t.string   "pergunta"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20101221154920) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "comparacao_id"
+    t.string   "nome"
   end
 
 end

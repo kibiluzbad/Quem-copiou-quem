@@ -8,7 +8,7 @@ html{
 }
 
 body{
-    background-image:url(../images/beta.jpg);
+    background-image:url(/images/beta.jpg);
     background-repeat:no-repeat;
     margin:0px;
     border:none;
@@ -104,4 +104,8 @@ img{
     margin:0 auto;
     padding: 20px;
     background-color:#eee;   
+}
+div.growlUI { background: url(/images/check48.png) no-repeat 10px 10px }
+div.growlUI h1, div.growlUI h2 {
+	color: white; padding: 5px 5px 5px 75px; text-align: left
 }

@@ -5,11 +5,10 @@ $(document).ready(function() {
         var id = $(this).attr("data-objetoid");
         var parent = $(this).parent();
         $.get('/votar/' + id, function(data) {
-          var parts = data.split('|')  
-          $('#a .votos').html(parts[0]);
-          $('#b .votos').html(parts[1]);
-          $('#total_votos span').html(parts[2]);
-          alert("Seu voto foi enviado!");
+          $('#a .votos').html(data.a);
+          $('#b .votos').html(data.b);
+          $('#total_votos span').html(data.total);
+          $.growlUI('Atenção:', 'Seu voto foi enviado!');
         });
     });
 });

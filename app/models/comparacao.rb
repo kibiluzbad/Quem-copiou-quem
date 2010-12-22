@@ -2,11 +2,11 @@ class Comparacao < ActiveRecord::Base
   has_many :objetos
   
   def objeto_a
-    self.objetos[0] if self.objetos
+    self.objetos.select{|o| o.nome == "a"}.first if self.objetos
   end
   
   def objeto_b
-    self.objetos[1] if self.objetos
+    self.objetos.select{|o| o.nome == "b"}.first if self.objetos
   end
   
   def total_votos
